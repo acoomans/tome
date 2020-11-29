@@ -1,38 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;600;700&display=swap');
+
+h1 {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+textarea {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 150%;
+  color: #FFFFFF;
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  resize: none;
+}
+
+textarea:focus {
+  outline: none;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #0E0E0E;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.Writer {
+  flex: 1 1 50%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Writer form {
+  margin: 104px 85px 69px 85px;
+}
+
+.Writer textarea {
+  width: 100%;
+  height: 500px;
+  margin-top: 69px;
+  overflow: auto;
+}
+
+.Tome {
+  flex: 1 1 50%;
+  background-color: black;
+}
+
+.Tome .Content {
+  margin: 73px 168px;
+}
+
+.Tome .Page {
+  width: 404px;
+  height: 199.92px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13.3278px;
+  line-height: 120%;
+  letter-spacing: -0.168944px;
+  color: #FFFFFF;
+  display: flex;
+  margin-bottom: 26.08px;
+}
+
+.Tome .Box {
+  background: linear-gradient(0deg, #0E0E0E, #0e0e0e);
+  border-radius: 13.3278px;
+}
+
+.Tome .Page.Text .Text {
+  margin: auto 132.45px auto 16.66px;
+}
+
+.Tome .Page.Barchart {
+  display: flex;
+  flex-direction: row;
+}
+
+.Tome .Page.Barchart > * {
+  height: 100%;
+  width: 50%;
+  display: flex;
+}
+.Tome .Page.Barchart .Box.Text {
+  margin-right: 4.18px;
+}
+
+.Tome .Page.Barchart .Box.Text .Text {
+  margin: auto 16.7px;
+}
+
+.Tome .Page.Barchart .Chart {
+  margin: auto;
 }
